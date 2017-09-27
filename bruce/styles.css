@@ -6,6 +6,10 @@ body {
 	color: #444;
 }
 
+.clear {
+	clear: both;
+}
+
 #content {
 	margin: 2em 25%;
 }
@@ -24,16 +28,45 @@ body {
 }
 
 #head img {
-	width: 25em;
-	margin-bottom: 1em;
+	width: 50%;
+	float: right
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 1.9vw;
 }
 
 h2 {
-	border-bottom: solid 1px #444;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 2em;
+}
+
+hr {
+	border: solid 2px #444;
+	margin-top: 3.5em;
 }
 
 h3 {
-	margin: 1.5em 0 0.3em;
+	margin-top: 2em;
+}
+
+h3 span:first-child {
+	float: left;
+}
+
+h3 span:nth-child(2) {
+	float: right;
+}
+
+h4 {
+	text-transform: uppercase;	
+}
+
+h3 + h4 {
+	clear: both;
+	border-top: solid thin #444;
 }
 
 p {
@@ -42,6 +75,7 @@ p {
 
 ul {
 	margin-top: 0;
+	padding-left: 1.25em;
 }
 
 #nav ul {
